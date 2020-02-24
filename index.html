@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Conversor de moedas</title>
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="info">
+            <p>Conversor de <span id="show-moeda">Moeda</span> para BRL</p>
+        </div>
+        <div id="input-container">
+            <input id="input-value"name="value" type="number" placeholder="Digite um valor"/>
+            <select id="moedas">
+                <option value="USD">Dolar</option>
+                <option value="EUR">Euro</option>
+            </select>
+        </div>
+        <div id="result">
+            <p>O valor convertido: </p>
+            <span id="show-result">R$ 0,00</span>
+        </div>
+       
+    </div>
+
+
+    <script src="excange-api.js"></script>
+</body>
+
+</html>
