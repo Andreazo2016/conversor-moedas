@@ -2,6 +2,7 @@ const showMoedaConversao = document.getElementById('show-moeda')
 const inputValue = document.getElementById('input-value')
 const select = document.getElementById('moedas')
 const result = document.getElementById('show-result')
+const btn = document.getElementById('btn-converter')
 
 
 
@@ -28,16 +29,10 @@ function buscarDadosPor(quotes) {
 
 }
 showMoedaConversao.innerHTML = 'USD'
-inputValue.addEventListener('change', function () {
-    
-    const { value } = select
-    buscarDadosPor(value)
-    showMoedaConversao.innerHTML = value
-})
 
-select.addEventListener('change', function (event) {
-    
-    const { value } = event.target
+
+btn.addEventListener('click', function(){
+    const { value } = select
     buscarDadosPor(value)
     showMoedaConversao.innerHTML = value
 })
